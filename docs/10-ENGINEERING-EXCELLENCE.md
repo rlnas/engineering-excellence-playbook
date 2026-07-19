@@ -54,6 +54,34 @@ Engineering Excellence is about making good engineering decisions that maximize 
 
 Engineering Excellence consists of six interconnected pillars.
 
+```mermaid
+flowchart TD
+
+    V[Business Vision]
+
+    V --> P[Engineering Principles]
+
+    P --> A[Architecture]
+    P --> Q[Quality]
+    P --> S[Security]
+    P --> D[Delivery]
+
+    A --> O[Operations]
+    Q --> O
+    S --> O
+    D --> O
+
+    O --> C[Continuous Improvement]
+
+    C -. Feedback .-> P
+```
+
+The Engineering Excellence model is a continuous system rather than a sequential process.
+
+Business objectives establish engineering principles, which guide architectural, quality, security and delivery decisions. These capabilities enable successful operations, while operational feedback continuously improves the engineering system.
+
+Engineering Excellence emerges from the interaction of these capabilities rather than from optimizing any individual discipline in isolation.
+
 ## 1. Architecture
 
 Build systems that are understandable, maintainable and capable of evolving.
@@ -99,22 +127,6 @@ Observability, monitoring, incident response and operational feedback enable con
 Engineering organizations learn continuously.
 
 Every incident, deployment, review and retrospective provides opportunities to improve both software and engineering practices.
-
----
-
-# Relationship Between the Pillars
-
-None of the pillars operate independently.
-
-For example:
-
-- Strong architecture improves quality.
-- Quality improves delivery confidence.
-- Secure design reduces operational risk.
-- Observability improves both operations and future architecture decisions.
-- Continuous improvement strengthens every pillar.
-
-Engineering Excellence emerges from the interaction between these capabilities rather than the optimization of any single discipline.
 
 ---
 
